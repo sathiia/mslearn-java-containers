@@ -62,10 +62,10 @@ steps:
       $(tag)
 - task: AzureMysqlDeployment@1
 displayName:Run MySQL initialization script
-..inputs:
+inputs:
 azureSubscription: 'Azure Connection'
-serverName: 'java-container-cicd-26732.mysql.database.azure.com'
-#databaseName: 'javacontainercicd26732.azurecr.io'
+serverName: '$java-container-cicd-26732.mysql.database.azure.com'
+databaseName: 'javacontainercicd26732.azurecr.io'
 sqlUsername: $sysadmin@java-container-cicd-26732
 sqlPassword: $P@ssw0rd
 sqlFile: '$(Build.SourcesDirectory)/CreateMYSQLDB.sql'
