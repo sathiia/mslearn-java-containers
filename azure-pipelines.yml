@@ -13,11 +13,6 @@ variables:
   webRepository: 'web'
   tag: '$(Build.BuildId)'
   vmImageName: 'ubuntu-latest'
-  - task: Maven@3
-  displayName: 'Maven pom.xml'
-  inputs:
-    options: '-DskipITs --settings ./maven/settings.xml'
-    publishJUnitResults: false
 stages:
 - stage: Build
   displayName: Build and publish Java container
