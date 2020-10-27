@@ -64,10 +64,10 @@ steps:
 displayName:Run MySQL initialization script
 inputs:
 azureSubscription: 'Azure Connection'
-serverName: '$(java-container-cicd-26732).mysql.database.azure.com'
+serverName: '$java-container-cicd-26732.mysql.database.azure.com'
 databaseName: 'javacontainercicd26732.azurecr.io'
-sqlUsername: $(sysadmin)@$(javacontainercicd26732.azurecr.io)
-sqlPassword: $(P@ssw0rd)
+sqlUsername: $sysadmin@java-container-cicd-26732
+sqlPassword: $P@ssw0rd
 sqlFile: '$(c:/)/CreateMYSQLDB.sql'
 - stage: Deploy
   displayName: 'Deploy Web App'
