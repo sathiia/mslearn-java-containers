@@ -69,7 +69,7 @@ inputs:
     sqlUsername: $(MySqlUserName)@$(MySqlServer)
     sqlPassword: $(MySqlPassword)
     sqlFile: '$(Build.SourcesDirectory)/CreateMYSQLDB.sql'
-    - stage: Deploy
+- stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: Build
   condition: succeeded()
