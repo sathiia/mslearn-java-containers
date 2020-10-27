@@ -24,7 +24,7 @@ stages:
     variables:
     - group: Release
     - task: AzureMysqlDeployment@1
-  displayName: Run MySQL initialization script
+#displayName: Run MySQL initialization script
   inputs:
     azureSubscription: 'Azure Connection'
     serverName: '$(MySqlServer).mysql.database.azure.com'
