@@ -9,7 +9,6 @@ trigger:
 resources:
 - repo: self
 variables:
-variables:
   dockerfilePath: '$(Build.SourcesDirectory)/src/Dockerfile'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
