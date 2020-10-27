@@ -64,7 +64,7 @@ steps:
 displayName:Run MySQL initialization script
 inputs:
 azureSubscription: 'Azure Connection'
-serverName: '$(MySqlServer).mysql.database.azure.com'
+serverName: '$(java-container-cicd-26732).mysql.database.azure.com'
 databaseName: 'alm'
 sqlUsername: $(MySqlUserName)@$(MySqlServer)
 sqlPassword: $(MySqlPassword)
