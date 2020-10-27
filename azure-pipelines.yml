@@ -42,7 +42,7 @@ steps:
   inputs:
     options: '-DskipITs --settings ./maven/settings.xml'
     publishJUnitResults: false
-    - task: CopyFiles@2
+- task: CopyFiles@2
   displayName: Copy WAR file to staging directory
   inputs:
     sourceFolder: '$(build.sourcesdirectory)'
