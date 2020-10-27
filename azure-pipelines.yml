@@ -23,4 +23,3 @@ stages:
       vmImage: $(vmImageName)
     variables:
     - group: Release
-steps:
