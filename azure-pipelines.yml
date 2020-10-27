@@ -23,8 +23,8 @@ stages:
       vmImage: $(vmImageName)
     variables:
     - group: Release
-Maven@3
-  displayName: 'Maven pom.xml'
+-task: Maven@3
+  displayName: 'pom.xml'
   inputs:
     options: '-DskipITs --settings ./maven/settings.xml'
     publishJUnitResults: false
