@@ -50,7 +50,7 @@ steps:
       target/myshuttledev*.war
       *.sql
     targetFolder: '$(build.artifactstagingdirectory)'
-    - task: Docker@2
+- task: Docker@2
   displayName: Build and push Java container image to registry
   inputs:
     command: buildAndPush
