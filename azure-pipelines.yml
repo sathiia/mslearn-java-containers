@@ -13,6 +13,17 @@ variables:
   webRepository: 'web'
   tag: '$(Build.BuildId)'
   vmImageName: 'ubuntu-latest'
+  stages:
+- stage: Build
+  displayName: Build and publish Java container
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    variables:
+    - group: Release
+    steps:
 
 
 pool:
