@@ -60,7 +60,7 @@ steps:
     containerRegistry: 'Container Registry Connection'
     tags: |
       $(tag)
-      - task: AzureMysqlDeployment@1
+- task: AzureMysqlDeployment@1
 displayName: Run MySQL initialization script
 inputs:
     azureSubscription: 'Azure Connection'
