@@ -23,9 +23,9 @@ stages:
       vmImage: $(vmImageName)
     variables:
     - group: Release
-    - task: AzureMysqlDeployment@1
+   # - task: AzureMysqlDeployment@1
 #displayName: Run MySQL initialization script
-  inputs:
+  #inputs:
     azureSubscription: 'Azure Connection'
     serverName: '$(MySqlServer).mysql.database.azure.com'
     databaseName: 'alm'
