@@ -16,7 +16,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-  variables:
   dockerfilePath: '$(Build.SourcesDirectory)/src/Dockerfile'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
